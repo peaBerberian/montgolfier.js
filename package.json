@@ -1,0 +1,31 @@
+{
+  "name": "montgolfier.js",
+  "version": "0.0.1",
+  "description": "File explorer for the cloud based on redux",
+  "main": "dist/montgolfier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/*.js src/**/*.js",
+    "build": "webpack"
+  },
+  "author": "PeaBerberian",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "reselect": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "eslint": "^3.10.2",
+    "eslint-plugin-react": "^6.7.1",
+    "webpack": "^1.13.3"
+  }
+}
