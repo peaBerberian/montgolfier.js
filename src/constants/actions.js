@@ -1,5 +1,13 @@
 export default {
 
+  /**
+   * Change directory path and content.
+   */
+  SET_DIRECTORY: 'SET_DIRECTORY',
+
+  /**
+   * Display the current directory's content.
+   */
   DISPLAY_DIRECTORY_CONTENT: 'DISPLAY_DIRECTORY_CONTENT',
 
   /**

@@ -1,9 +1,29 @@
 // import { combineReducers } from 'redux';
 
-import { ACTIONS } from  './constants';
+import { ACTIONS } from  '../constants';
 
 export default (state, action) => {
   switch (action.type) {
+
+    case ACTIONS.SET_DIRECTORY: {
+      return Object.assign({}, state, {
+
+        // add previous currentPath to previousPaths
+        // avoid doing so if there was previously no path
+        previousPaths: [
+          ...state.previousPaths,
+          state.currentPath
+        ],
+
+        // clear nextPaths
+        nextPaths: [],
+        currentPath: action.path,
+        isLoading: false,
+        currentContent: action.content
+
+      });
+    }
+
     case ACTIONS.LOAD_DIRECTORY:
       return Object.assign({}, state, {
 

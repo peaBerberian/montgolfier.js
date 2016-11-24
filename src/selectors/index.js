@@ -35,6 +35,8 @@ const sortElems = (elems, order, desc) => {
             a.modificationDate - b.modificationDate;
         };
     }
+
+    return null;
   };
 
   const sortingFunction = getSortingFunction();

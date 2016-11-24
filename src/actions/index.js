@@ -1,5 +1,5 @@
-import { ACTIONS } from './constants';
-import dirContent from './mocks/dir.js';
+import { ACTIONS } from '../constants';
+import dirContent from '../mocks/dir.js';
 
 const requestDirectoryAndDisplay = (directory, dispatch) => {
   // request...
@@ -76,6 +76,5 @@ export {
   goToDirectory,
   previousDirectory,
   nextDirectory,
-  changeSortingOrder,
-  ACTIONS
+  changeSortingOrder
 };
